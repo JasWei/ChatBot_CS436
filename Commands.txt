@@ -39,3 +39,6 @@ git remote add origin REPO_GITHUB_URL
 
 //INITIALIZE DIRECTORY AS GIT REPO
 git init
+
+//Clear Last Commit
+git reset --soft HEAD~1
