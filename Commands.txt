@@ -1,0 +1,41 @@
+https://www.geeksforgeeks.org/working-on-git-bash/
+
+//Add files to commit
+git add FILE_NAME
+
+//Commit File
+git commit -m "COMMIT_NAME"
+
+//Push branch into respective github remote branch
+git push origin BRANCH_NAME
+
+//Remove directory with files
+rm -r DIRECTORY_NAME
+
+//Place remote (Github) master in place of your local master
+//**This might overwrite local master**
+git fetch origin
+git reset --hard origin/master
+
+//Create file
+//The > is like writing emacs
+> FILE_NAME
+
+//Create new Branch
+git branch NEW_BRANCH
+
+//View all branches
+git branch
+
+//Check if you have any commits or changes
+git status
+
+//Move between branches
+git checkout BRANCH_NAME
+
+//Add github repository so you push and pull to this repo
+//**Make sure to do this in your local git repo (Where you are working)
+git remote add origin REPO_GITHUB_URL
+
+//INITIALIZE DIRECTORY AS GIT REPO
+git init
